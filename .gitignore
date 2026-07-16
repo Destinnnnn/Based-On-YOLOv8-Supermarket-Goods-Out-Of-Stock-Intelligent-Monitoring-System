@@ -1,0 +1,97 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.egg
+.eggs/
+*.whl
+
+# Virtual environments and local Python dependencies
+.venv/
+venv/
+env/
+/.pydeps/
+
+# Local runtime and validation outputs
+/.runtime/
+/validation_workspace/
+/validation_runs/
+
+# ===========================
+# Node / Frontend
+# ===========================
+node_modules/
+dist/
+build/
+coverage/
+.parcel-cache/
+*.tsbuildinfo
+
+# ===========================
+# IDE & Editor
+# ===========================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# ===========================
+# AI / Agent tools
+# ===========================
+.claude/
+antigravity-awesome-skills/
+.gemini/
+
+# ===========================
+# Local project documentation
+# ===========================
+/docs/
+
+# ===========================
+# OS generated
+# ===========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===========================
+# Environment & Secrets
+# ===========================
+.env*
+!.env.example
+*.log
+
+# ===========================
+# Model weights & training
+# ===========================
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+/models/
+/runs/
+/weights/
+/runtime/
+/training_logs/
+
+# ===========================
+# Datasets (large binary data)
+# ===========================
+/Dataset/
+/datasets/
+
+# ===========================
+# Local data & databases
+# ===========================
+/data/*
+!/data/.gitkeep
+*.db
+*.sqlite3

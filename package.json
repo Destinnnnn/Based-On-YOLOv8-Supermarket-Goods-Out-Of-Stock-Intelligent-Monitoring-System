@@ -1,0 +1,18 @@
+{
+  "name": "yolov8-supermarket-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "cd frontend && npm install",
+    "dev": "node ./scripts/dev-start.cjs",
+    "stop": "node ./scripts/dev-stop.cjs",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:preview": "cd frontend && npm run preview",
+    "frontend:clean": "cd frontend && npm run clean",
+    "frontend:lint": "cd frontend && npm run lint",
+    "clean": "npm run frontend:clean",
+    "build": "npm run frontend:build",
+    "start": "npm run frontend:preview"
+  }
+}

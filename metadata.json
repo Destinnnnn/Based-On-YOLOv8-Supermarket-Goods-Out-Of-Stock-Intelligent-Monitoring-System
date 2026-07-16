@@ -1,0 +1,5 @@
+{
+  "name": "YOLOv8 Supermarket Stock Monitor",
+  "description": "Intelligent out-of-stock monitoring system based on YOLOv8 for supermarkets.",
+  "requestFramePermissions": ["camera"]
+}

@@ -1,0 +1,8 @@
+torch
+torchvision
+pillow
+numpy
+
+# Training / YOLO fine-tuning CSV generation
+ultralytics
+pyyaml
