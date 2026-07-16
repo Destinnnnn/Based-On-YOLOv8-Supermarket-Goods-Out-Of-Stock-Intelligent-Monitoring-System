@@ -67,8 +67,21 @@ YOLOv8_Project/
 ├─ .env.example             环境变量示例
 ├─ requirements.txt         Python 依赖
 ├─ package.json             全栈开发启停命令
+├─ LICENSE                  MIT 许可证
 └─ README.md                项目使用说明
 ```
+
+## 数据集
+
+本人使用 [LoCount 数据集](https://isrc.iscas.ac.cn/gitlab/research/locount-dataset) 完成本项目的 YOLOv8 商品检测模型与 Count 数量估计模型训练和验证。LoCount 来源于 AAAI 2021 论文 [《Rethinking Object Detection in Retail Stores》](https://ojs.aaai.org/index.php/AAAI/article/view/16178)，面向零售货架场景，将同类商品组作为检测目标，并在标注中同时记录目标框、商品类别和框内实例数量。
+
+- 官方项目页：[AAAI2021 LoCount Dataset](https://isrc.iscas.ac.cn/gitlab/research/locount-dataset)（当前可能要求登录）。
+- 数据集下载：[百度网盘](https://pan.baidu.com/s/1WTzOr3metW-BTBFdslgFUg?pwd=e24y)，提取码 `e24y`。
+- 标注核心字段：`x1,y1,x2,y2,cls,cnt`，分别表示目标框坐标、类别和框内数量。
+
+仓库不包含 LoCount 数据文件。本项目的训练和推理流程不限定使用 LoCount；其他数据集在划分训练、验证和测试集，并转换为 YOLO 检测标注及 `counts.csv` 计数标注后，也可以用于训练。相关数据准备入口见 `scripts/prepare_locount_tvt_dataset.py`，计数标注格式见 `count_module/COUNT_MODULE.md`。
+
+LoCount 数据集的使用与再分发遵循其来源页面和作者给出的条款，不属于本仓库 MIT 许可证的授权范围。
 
 ## 环境与依赖
 
@@ -112,3 +125,7 @@ npm run dev
 ```powershell
 npm run stop
 ```
+
+## 许可证
+
+本项目代码基于 [MIT License](LICENSE) 发布。LoCount 数据集、模型权重及其他第三方资源保留各自的许可和使用条款。
