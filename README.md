@@ -52,6 +52,25 @@ MobileNetV3 估算检测框内商品数量
 
 实时检测使用 `/api/v1/camera/stream`；认证、库存、标签映射、告警、报表和系统设置通过 `/api/v1` 下的 REST API 提供。
 
+## 识别效果
+
+以下为测试集中的部分商品检测与数量估计结果。检测框标签同时显示商品的中英文类别名称和 Count 模型给出的框内商品数量。
+
+**50 组测试样例总览**
+
+![50 组商品检测与数量估计样例总览](examples/detection_results/contact_sheet.jpg)
+
+**典型检测结果**
+
+<p align="center">
+  <img src="examples/detection_results/multi_count_mid_target.jpg" alt="盆与垃圾桶的多目标检测和数量估计结果" width="49%">
+  <img src="examples/detection_results/medium_count_small_target.jpg" alt="碗类商品的多目标检测和数量估计结果" width="49%">
+</p>
+
+<p align="center">
+  <img src="examples/detection_results/single_small_target.jpg" alt="茶饮料商品的单目标检测结果" width="99%">
+</p>
+
 ## 项目结构
 
 以下为仓库中与应用运行直接相关的核心文件和目录：
